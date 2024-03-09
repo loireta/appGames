@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "appGames",
-    "slug": "appGames",
+    "name": "app-Games",
+    "slug": "app-Games",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
