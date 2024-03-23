@@ -1,13 +1,38 @@
+import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 
 export default function App() {
+  const [vazio,setVazio] = useState('');
+  const [senha,setSenha] = useState('');
+  const [email,setEmail] = useState('');
+  const [sucesso,setSucesso] = useState('');
+  function entrar() {
+    let c1, c2, validar; 
+    
+    c1 = [setEmail];
+    c2 = [setSenha];
+
+    validar = c1, c2;
+
+    setVazio(vazio)
+
+    if (email == '' || senha == ''){
+      setVazio("Campo obrigatório!")
+    }else{
+      setSucesso("Login efetuado com sucesso!")
+    }
+  }
   return (
     <View style={estilos.container}>
       <View style={estilos.login}>
         <TextInput
+          onChangeText={(text)=>setSucesso(text)}
           style={estilos.input}
-          placeholder='Usuário ou e-mail'
-          secureTextEntry />
+          placeholder='Usuário ou e-mail'/>
+        <Text
+        style={estilos.texto}>
+          {vazio}
+        </Text>
 
         <Text style={estilos.texto}>
         </Text>
@@ -15,6 +40,10 @@ export default function App() {
           style={estilos.input}
           placeholder='Senha'
           secureTextEntry={true} />
+        <Text
+        style={estilos.texto}>
+          {vazio}
+        </Text>
         
       <TouchableOpacity style={estilos.viewPassoword}>
           <Text>
@@ -24,7 +53,9 @@ export default function App() {
 
       </View>
 
-      <TouchableOpacity style={estilos.button}>
+      <TouchableOpacity 
+      onPress={entrar}
+      style={estilos.button}>
         <Text>
           Entrar
         </Text>
