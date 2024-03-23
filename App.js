@@ -1,38 +1,16 @@
-import { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 
 export default function App() {
-  const [vazio,setVazio] = useState('');
-  const [senha,setSenha] = useState('');
-  const [email,setEmail] = useState('');
-  const [sucesso,setSucesso] = useState('');
-  function entrar() {
-    let c1, c2, validar; 
-    
-    c1 = [setEmail];
-    c2 = [setSenha];
-
-    validar = c1, c2;
-
-    setVazio(vazio)
-
-    if (email == '' || senha == ''){
-      setVazio("Campo obrigatório!")
-    }else{
-      setSucesso("Login efetuado com sucesso!")
-    }
-  }
   return (
     <View style={estilos.container}>
+
+<Image source={require("./assets/Logo.png")} />
+
       <View style={estilos.login}>
         <TextInput
-          onChangeText={(text)=>setSucesso(text)}
           style={estilos.input}
-          placeholder='Usuário ou e-mail'/>
-        <Text
-        style={estilos.texto}>
-          {vazio}
-        </Text>
+          placeholder='Usuário ou e-mail'
+          secureTextEntry />
 
         <Text style={estilos.texto}>
         </Text>
@@ -40,26 +18,36 @@ export default function App() {
           style={estilos.input}
           placeholder='Senha'
           secureTextEntry={true} />
-        <Text
-        style={estilos.texto}>
-          {vazio}
-        </Text>
         
       <TouchableOpacity style={estilos.viewPassoword}>
-          <Text>
+          <Text style={estilos.texto2} >
             Esqueci minha senha!
           </Text>
         </TouchableOpacity>
 
       </View>
 
-      <TouchableOpacity 
-      onPress={entrar}
-      style={estilos.button}>
+      <Image source={require("./assets/linhas.png")} style={estilos.linhas}  />
+
+      <TouchableOpacity style={estilos.button1}>
+      <Image source={require("./assets/Google.png")} />
+      </TouchableOpacity>
+
+      <Image source={require("./assets/Entrar.png")} style={estilos.linha}  />
+
+  <View style={estilos.flex}>
+      <TouchableOpacity style={estilos.button2}>
         <Text>
+          Criar Conta
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={estilos.button3}>
+        <Text style={estilos.texto}>
           Entrar
         </Text>
       </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -81,7 +69,7 @@ const estilos = StyleSheet.create({
     backgroundColor: '#212121',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 8
+    gap: 20,
   },
   texto: {
     color: "#FFFFFF",
@@ -93,14 +81,30 @@ const estilos = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 8,
     width: "80%",
-    backgroundColor: '#FFF'
+    backgroundColor: '#FFF',
   },
-  button: {
+  button1: {
+    backgroundColor: "#fff",
+    paddingHorizontal: 80,
+    paddingVertical: 8,
+    borderRadius: 8,
+    marginBottom: 50,
+  },
+
+  button2: {
     backgroundColor: "#fff",
     paddingHorizontal: 24,
     paddingVertical: 8,
     borderRadius: 8,
   },
+
+  button3: {
+    backgroundColor: "#000",
+    paddingHorizontal: 24,
+    paddingVertical: 8,
+    borderRadius: 8,
+  },
+
   viewPassoword: {
   color: '#000',
   padding: 8,
@@ -112,5 +116,18 @@ sombra: {
   shadowOffset: { width: 0, height: 2 },
   shadowOpacity: 0.8,
   shadowRadius: 50,
+},
+
+flex: {
+flexDirection: 'row',
+gap: 20,
+},
+
+linhas: {
+  marginTop: 20,
+},
+
+texto2: {
+  textDecorationLine: 'underline',
 }
 });
