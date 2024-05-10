@@ -1,8 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import CriarConta from './src/pages/CriarConta';
-import EntrarConta from './src/pages/EntrarConta';
-
+import Home from './src/pages/Home';
+import Cadastrar from './src/pages/Cadastrar';
+import Login from './src/pages/Login';
 
 const Stack = createStackNavigator();
 
@@ -10,12 +10,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="EntrarConta"
+        initialRouteName="Home"
         screenOptions={{
           headerShown: false
         }}>
-        <Stack.Screen name="EntrarConta" component={EntrarConta} />
-        <Stack.Screen name="CriarConta" component={CriarConta} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Cadastrar" component={Cadastrar} />
+        <Stack.Screen name="Login" component={Login} />
       </Stack.Navigator>
     </NavigationContainer>
   );
