@@ -64,7 +64,7 @@ export default function Cadastrar({ navigation }) {
 
       <StatusBar></StatusBar>
 
-      <Image source={require('./../../../imgs/logo.png')} style={estilos.logo} />
+      <Image source={require('./../../../assets/logo.png')} style={estilos.logo} />
 
       <View style={estilos.campos}>
 
