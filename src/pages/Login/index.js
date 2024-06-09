@@ -1,4 +1,4 @@
-import { View, TextInput, Image, ScrollView } from "react-native";
+import { View, TextInput, Image, ScrollView, TouchableOpacity, Text } from "react-native";
 import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
 
@@ -12,21 +12,64 @@ export default function Login() {
   return (
     <ScrollView>
       <View style={styles.ContainerPrincipal}>
-        <Image source={require('./../../../assets/logo.png')} />
+
+
+        <View style={styles.ContainerImage}>
+          <Image
+            source={require('./../../../assets/logo.png')}
+            style={styles.ImageLogo} />
+        </View>
+
+
+        <View style={styles.ContainerInput}>
+          <TextInput
+            style={styles.inputEmail}
+            placeholder="Endereço de email ou número de telefone"
+          />
+
+          <TextInput
+            style={styles.inputSenha}
+            placeholder="Senha"
+          />
+        </View>
+
+
+        <View>
+          ou container
+        </View>
+
+        <View style={styles.ContainerGoogle}>
+
+          <Image
+            source={require('./../../../assets/Google.png')}
+            style={styles.ImageGoogle} />
+
+        </View>
+
+        <View style={styles.containerBotoes}>
+
+          <TouchableOpacity
+            style={styles.BotaoCriarConta}>
+
+            <Text style={styles.TextoBotaoCriarConta}>
+              Criar conta
+            </Text>
+
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.BotaoEntrar}>
+
+            <Text style={styles.TextoBotaoEntrar}>
+              Entrar
+            </Text>
+
+          </TouchableOpacity>
+
+        </View>
+
       </View>
 
-      <View>
-        <TextInput
-          style={styles.inputEmail}
-          placeholder="Endereço de email ou número de telefone"
-        />
-
-        <TextInput
-          style={styles.inputSenha}
-          placeholder="Senha"
-        />
-      </View>
-      
     </ScrollView>
   );
 }
