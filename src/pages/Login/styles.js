@@ -3,7 +3,6 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
     ContainerPrincipal: {
         backgroundColor: '#212121',
-        paddingHorizontal: 40,
         alignItems: 'center',
         height: 700
     },
@@ -47,10 +46,16 @@ export default StyleSheet.create({
         height: 120,
         gap: 7,
         paddingHorizontal: 19,
-        marginTop: 68
+        marginTop: 68,
+        marginBottom: 74
+    },
+    ContainerDoInput:{
+        paddingHorizontal: 30,
+        width: '100%'
     },
     ContainerImage:{
-        marginTop: 76
+        marginTop: 76,
+        marginHorizontal: 47
     },
     ImageLogo:{
         height: 95,
@@ -62,7 +67,8 @@ export default StyleSheet.create({
         backgroundColor: 'white',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 10
+        borderRadius: 10,
+        marginBottom: 83,
     },
     BotaoCriarConta:{
         height: 41,
@@ -91,10 +97,21 @@ export default StyleSheet.create({
     TextoBotaoEntrar:{
         color: 'white'
     },
+    ouContainer:{
+        width: '100%',
+        height: 20,
+        marginBottom: 21,
+    },
+    barraHorizontal:{
+        width: '100%',
+        height: 1,
+        backgroundColor: 'white',
+        marginBottom: 14
+    },
     containerBotoes:{
         flex: 1,
         flexDirection: 'row',
-        gap: 37
+        gap: 37,
+        alignItems: 'center'
     }
-
 });

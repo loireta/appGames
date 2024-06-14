@@ -13,6 +13,7 @@ export default function Login() {
     <ScrollView>
       <View style={styles.ContainerPrincipal}>
 
+        
 
         <View style={styles.ContainerImage}>
           <Image
@@ -20,7 +21,7 @@ export default function Login() {
             style={styles.ImageLogo} />
         </View>
 
-
+        <View style={styles.ContainerDoInput}>
         <View style={styles.ContainerInput}>
           <TextInput
             style={styles.inputEmail}
@@ -33,17 +34,21 @@ export default function Login() {
           />
         </View>
 
+        </View>
 
-        <View>
+
+        <View style={styles.ouContainer}>
           ou container
         </View>
 
         <View style={styles.ContainerGoogle}>
 
           <Image
-            source={require('./../../../assets/Google.png')}
-            style={styles.ImageGoogle} />
+            source={require('./../../../assets/Google.png')} />
 
+        </View>
+
+        <View style={styles.barraHorizontal}>
         </View>
 
         <View style={styles.containerBotoes}>
