@@ -31,7 +31,7 @@ export default StyleSheet.create({
         borderColor: '#A9A9A9',
         color: '#000000',
         shadowColor: '#000',
-        shadowOffset: { width: 2, height: 2 },
+
         shadowOpacity: 0.2,
         fontSize: 10,
         backgroundColor: 'white'

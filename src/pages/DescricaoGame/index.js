@@ -17,7 +17,7 @@ export default function DescricaoJogo() {
         <View style={styles.ContainerImage}>
           <Image
             source={require('./../../../assets/last.png')}
-            style={styles.ImageLogo} />
+            style={styles.Imagelast} />
         </View>
  
         <View>
@@ -49,7 +49,7 @@ export default function DescricaoJogo() {
         </View>
  
         <View style={styles.ContainerInput}>
-            <Text>
+            <Text style={styles.ContainerText}>
                 tem uma história incrível, um dos melhores jogos q ja joguei.
             </Text>
         </View>
