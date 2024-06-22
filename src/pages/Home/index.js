@@ -17,7 +17,7 @@ export default function Home() {
 
                 <View style={styles.IconSearchStyle}>
                     <Image
-                        source={require('./../../../assets/procurarIcon.png')}
+                        source={require('./../../../assets/procurar.png')}
                         style={styles.ImageSearchIcon} />
                 </View>
 
@@ -27,7 +27,7 @@ export default function Home() {
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/images1.png')}
+                        source={require('./../../../assets/callofduty.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
@@ -35,39 +35,39 @@ export default function Home() {
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/download3.png')}
+                        source={require('./../../../assets/fifa.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/imagemtlou.png')}
+                        source={require('./../../../assets/last.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/download4.png')}
+                        source={require('./../../../assets/residentevil.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/download1.png')}
+                        source={require('./../../../assets/granturismo.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/download5.png')}
+                        source={require('./../../../assets/mortalkombat.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/shopping1.png')}
+                        source={require('./../../../assets/gta5.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/download6.png')}
+                        source={require('./../../../assets/spiderman.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/download2.png')}
+                        source={require('./../../../assets/reddead.png')}
                         style={styles.ImageSearchIcon} />
 
                     <Image
-                        source={require('./../../../assets/download7.png')}
+                        source={require('./../../../assets/crash.png')}
                         style={styles.ImageSearchIcon} />
 
 
