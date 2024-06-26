@@ -4,15 +4,30 @@ import styles from './styles';
 export default function Home() {
 
 
+
     return (
         <ScrollView>
 
             <View style={styles.ContainerPrincipal}>
 
                 <View style={styles.ContainerImage}>
+
+
+           
+                <Image
+                        source={require('./../../../assets/menu.png')}
+                        style={styles.ImageMenu} />
+
                     <Image
                         source={require('./../../../assets/logo.png')}
                         style={styles.ImageLogoPrincipal} />
+
+                    <Image
+                        source={require('./../../../assets/sinalmais.png')}
+                        style={styles.ImageSinalMais} />
+
+
+
                 </View>
 
                 <View style={styles.IconSearchStyle}>
@@ -22,6 +37,7 @@ export default function Home() {
                 </View>
 
                 <View style={styles.ContainerJogos}>
+
                     <Image
                         source={require('./../../../assets/bandleTale.png')}
                         style={styles.ImageSearchIcon} />

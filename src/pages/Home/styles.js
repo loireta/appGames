@@ -10,15 +10,29 @@ export default StyleSheet.create({
     ContainerImage:{
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 19
+        marginBottom: 19,
+        flexDirection: 'row'
     },
+
+    ImageLogoPrincipal: {
+        justifyContent: 'center',
+        alignSelf: 'center',
+        alignItems: 'center',
+        height: 67
+    },  
+    ImageSinalMais: {
+        justifyContent: 'flex-end',
+        alignSelf: 'flex-end',
+        alignItems: 'right'
+    },  
+    ImageMenu: {
+        justifyContent: 'flex-start',
+        alignItems: 'left'
+    },  
     IconSearchStyle:{
         justifyContent: 'center',
         alignItems:'flex-end',
         marginBottom: 25
-    },
-    ImageLogoPrincipal:{
-        height: 67
     },
     ContainerJogos:{
         gap: 25,

@@ -2,11 +2,16 @@ import { View, TextInput, Image, ScrollView, TouchableOpacity, Text } from "reac
 import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
 
+
 export default function Login() {
   const navigation = useNavigation();
 
   function acessarHome() {
     navigation.navigate('Home');
+  }
+
+  function acessarCadastrar() {
+    navigation.navigate('Cadastrar');
   }
 
   return (
@@ -38,14 +43,17 @@ export default function Login() {
 
 
         <View style={styles.ouContainer}>
-          ou container
+
         </View>
 
-        <View style={styles.ContainerGoogle}>
+        <View>
+          <TouchableOpacity onPress={acessarHome}
+          style={styles.ContainerGoogle}>
 
           <Image
             source={require('./../../../assets/Google.png')} />
-
+          
+          </TouchableOpacity>
         </View>
 
         <View style={styles.barraHorizontal}>
@@ -53,7 +61,7 @@ export default function Login() {
 
         <View style={styles.containerBotoes}>
 
-          <TouchableOpacity
+          <TouchableOpacity onPress={acessarCadastrar}
             style={styles.BotaoCriarConta}>
 
             <Text style={styles.TextoBotaoCriarConta}>
@@ -62,7 +70,7 @@ export default function Login() {
 
           </TouchableOpacity>
 
-          <TouchableOpacity
+          <TouchableOpacity onPress={acessarHome}
             style={styles.BotaoEntrar}>
 
             <Text style={styles.TextoBotaoEntrar}>

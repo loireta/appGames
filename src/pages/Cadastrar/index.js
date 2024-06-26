@@ -2,7 +2,7 @@ import { View, TextInput, Image, ScrollView, TouchableOpacity, Text } from "reac
 import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
  
-export default function Cadastrar() {
+export default function Login() {
   const navigation = useNavigation();
  
   function acessarHome() {
@@ -51,7 +51,7 @@ export default function Cadastrar() {
  
         <View style={styles.containerBotoes}>
  
-          <TouchableOpacity
+          <TouchableOpacity onPress={acessarHome}
             style={styles.BotaoCriarConta}>
  
             <Text style={styles.TextoBotaoCriarConta}>
