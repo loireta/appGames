@@ -1,17 +1,25 @@
-import { View, TextInput, Image, ScrollView, TouchableOpacity, Text } from "react-native";
+import { View, Image, ScrollView, TouchableOpacity, Text } from "react-native";
 import styles from './styles';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Login() {
     const navigation = useNavigation();
 
-    function acessarHome() {
+    function VoltarTela() {
         navigation.navigate('Home');
     }
 
     return (
         <ScrollView>
+
+            <View style={styles.ContainerHeader}>
+                <TouchableOpacity onPress={VoltarTela}>
+                    <Image
+                        source={require('./../../../assets/seta.png')} />
+                </TouchableOpacity>
+            </View>
             <View style={styles.ContainerPrincipal}>
+
 
 
                 <View style={styles.ContainerImage}>

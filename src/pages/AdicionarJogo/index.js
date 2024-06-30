@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 export default function Login() {
     const navigation = useNavigation();
 
-    function acessarHome() {
+    function VoltarTela() {
         navigation.navigate('Home');
     }
 
@@ -13,6 +13,12 @@ export default function Login() {
         <ScrollView>
             <View style={styles.ContainerPrincipal}>
 
+                <View style={styles.ContainerHeader}>
+                    <TouchableOpacity onPress={VoltarTela}>
+                        <Image
+                            source={require('./../../../assets/seta.png')} />
+                    </TouchableOpacity>
+                </View>
 
                 <View style={styles.ContainerImage}>
                     <Image
@@ -21,13 +27,12 @@ export default function Login() {
                 </View>
 
                 <View>
-                    <Text style={styles.ContainerText}>ADICIONAR JOGO</Text>
+                    <Text style={styles.TextoAdicionarJogo}>ADICIONAR JOGO</Text>
                 </View>
 
                 <View style={styles.ContainerImage}>
                     <Image
-                        source={require('./../../../assets/linha2.png')}
-                        style={styles.ImageLogo} />
+                        source={require('./../../../assets/linha2.png')} />
                 </View>
 
                 <View>
@@ -39,8 +44,7 @@ export default function Login() {
 
                 <View style={styles.ContainerInput}>
                     <Image
-                        source={require('./../../../assets/camera.png')}
-                        style={styles.ImageLogo} />
+                        source={require('./../../../assets/camera.png')}/>
                 </View>
 
                 <View>
@@ -51,8 +55,7 @@ export default function Login() {
 
                 <View style={styles.ContainerInput}>
                     <Image
-                        source={require('./../../../assets/procurar.png')}
-                        style={styles.ImageLogo} />
+                        source={require('./../../../assets/procurar.png')}/>
                 </View>
 
 

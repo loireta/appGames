@@ -3,40 +3,41 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
     ContainerPrincipal: {
         backgroundColor: '#212121',
-        alignItems: 'center',
-        height: 700
+        height: 700,
+        padding: 19
     },
-    ContainerText: {
+    TextoAdicionarJogo: {
         marginTop: 30,
         textAlign: 'center',
-        fontSize: 24,
+        fontSize: 33,
         marginBottom: 20,
         color: '#FF8000',
     },
     ContainerImage:{
         marginTop: 15,
+        alignSelf: 'center'
     },
     ContainerTexto: {
-        marginTop: 30,
         textAlign: 'center',
-        fontSize: 24,
-        marginBottom: 43,
+        fontSize: 20,
         color: 'white',
+        marginVertical: 27
 
     },
-
     ContainerInput: {
         backgroundColor: '#4A4A4A',
-        width: '30%',
-        alignSelf: 'center',
+        width: 134,
         justifyContent: 'center',
         alignItems: 'center',
-        height: 100,
-        gap: 7,
-        paddingHorizontal: 19,
-        marginTop: -30,
-        marginBottom: 74,
-        borderWidth: 2, // Define a espessura da borda
-        borderColor: 'white' // Define a cor da borda
+        alignSelf: 'center',
+        height: 109,
+        borderWidth: 2, 
+        borderColor: 'white'
     },
+    ContainerHeader:{
+        justifyContent: 'flex-start'
+    },
+    ImageLogo:{
+        alignSelf: 'center'
+    }
 });

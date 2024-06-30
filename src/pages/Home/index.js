@@ -9,7 +9,12 @@ export default function Home() {
     function acessarDetalhes() {
         navigation.navigate('DescricaoGame');
     }
-
+    function acessarAdicionarJogo() {
+        navigation.navigate('AdicionarJogo');
+    }
+    function acessarPerfil() {
+        navigation.navigate('Perfil');
+    }
 
 
     return (
@@ -19,13 +24,18 @@ export default function Home() {
 
 
                 <View style={styles.ContainerHeader}>
+
+                    <TouchableOpacity onPress={acessarPerfil}>
                     <Image
                         source={require('./../../../assets/menu.png')}
                         style={styles.ImageMenu} />
+                    </TouchableOpacity>
 
-                    <Image
-                        source={require('./../../../assets/sinalmais.png')}
-                        style={styles.ImageSinalMais} />
+                    <TouchableOpacity onPress={acessarAdicionarJogo}>
+                        <Image
+                            source={require('./../../../assets/sinalmais.png')}
+                            style={styles.ImageSinalMais} />
+                    </TouchableOpacity>
 
 
                 </View>
