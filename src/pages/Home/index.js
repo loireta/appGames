@@ -1,30 +1,43 @@
-import { View, Text, Image, ScrollView } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
 import styles from './styles';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
+
+    const navigation = useNavigation();
+
+    function acessarDetalhes() {
+        navigation.navigate('DescricaoGame');
+    }
 
 
 
     return (
-        <ScrollView>
+        <ScrollView style={styles.ScrollViewStyle}>
 
             <View style={styles.ContainerPrincipal}>
 
-                <View style={styles.ContainerImage}>
 
-
-           
-                <Image
+                <View style={styles.ContainerHeader}>
+                    <Image
                         source={require('./../../../assets/menu.png')}
                         style={styles.ImageMenu} />
+
+                    <Image
+                        source={require('./../../../assets/sinalmais.png')}
+                        style={styles.ImageSinalMais} />
+
+
+                </View>
+
+
+                <View style={styles.ContainerImage}>
+
 
                     <Image
                         source={require('./../../../assets/logo.png')}
                         style={styles.ImageLogoPrincipal} />
 
-                    <Image
-                        source={require('./../../../assets/sinalmais.png')}
-                        style={styles.ImageSinalMais} />
 
 
 
@@ -39,52 +52,41 @@ export default function Home() {
                 <View style={styles.ContainerJogos}>
 
                     <Image
-                        source={require('./../../../assets/bandleTale.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/bandleTale.png')} />
 
                     <Image
-                        source={require('./../../../assets/callofduty.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/callofduty.png')} />
 
                     <Image
-                        source={require('./../../../assets/coup.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/coup.png')} />
 
                     <Image
-                        source={require('./../../../assets/fifa.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/fifa.png')} />
+
+                    <TouchableOpacity onPress={acessarDetalhes}>
+                        <Image
+                            source={require('./../../../assets/last.png')} />
+                    </TouchableOpacity>
+                    <Image
+                        source={require('./../../../assets/residentevil.png')} />
 
                     <Image
-                        source={require('./../../../assets/last.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/granturismo.png')} />
 
                     <Image
-                        source={require('./../../../assets/residentevil.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/mortalkombat.png')} />
 
                     <Image
-                        source={require('./../../../assets/granturismo.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/gta5.png')} />
 
                     <Image
-                        source={require('./../../../assets/mortalkombat.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/spiderman.png')} />
 
                     <Image
-                        source={require('./../../../assets/gta5.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/reddead.png')} />
 
                     <Image
-                        source={require('./../../../assets/spiderman.png')}
-                        style={styles.ImageSearchIcon} />
-
-                    <Image
-                        source={require('./../../../assets/reddead.png')}
-                        style={styles.ImageSearchIcon} />
-
-                    <Image
-                        source={require('./../../../assets/crash.png')}
-                        style={styles.ImageSearchIcon} />
+                        source={require('./../../../assets/crash.png')} />
 
 
                 </View>

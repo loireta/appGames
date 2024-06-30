@@ -10,7 +10,8 @@ export default StyleSheet.create({
     ContainerImage:{
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 19
+        marginBottom: 19,
+
     },
     ContainerText: {
         fontSize: 15,
@@ -29,16 +30,33 @@ export default StyleSheet.create({
     },
     ContainerInput: {
         backgroundColor: 'white',
-        width: '50%',
-        borderRadius: 10,
+        width: 237,
+        borderRadius: 20,
         alignSelf: 'center',
-        height: 100,
-        gap: 7,
-        paddingHorizontal: 5,
-        marginTop: 68,
+        height: 132,
+        padding: 8,
+        marginTop: 24
     },
-    ContainerTxt: {
-        fontSize: 12,
-        color: 'black'
+    ContainerText: {
+        fontSize: 10,
+        color: 'white',
+        alignSelf: 'center'
     },
+    ImageLogo:{
+        height: 126,
+        width: 116
+    },
+    DescricaoGame:{
+        color: 'black',
+        fontSize: 15,
+        fontWeight: 'black'
+    },
+    ContainerJogo:{
+        marginBottom: 24,
+        marginTop: 34,
+        alignSelf: 'center'
+    },
+    ContainerPergunta:{
+        marginBottom: 9
+    }
 });

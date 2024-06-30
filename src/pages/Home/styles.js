@@ -3,7 +3,6 @@ import { FlatList } from "react-native-web";
 
 export default StyleSheet.create({
     ContainerPrincipal:{
-        height: '100%',
         backgroundColor: '#212121',
         padding: 20
     },
@@ -21,13 +20,12 @@ export default StyleSheet.create({
         height: 67
     },  
     ImageSinalMais: {
-        justifyContent: 'flex-end',
-        alignSelf: 'flex-end',
-        alignItems: 'right'
+        height: 38,
+        width: 48
     },  
     ImageMenu: {
-        justifyContent: 'flex-start',
-        alignItems: 'left'
+        height: 38,
+        width: 48
     },  
     IconSearchStyle:{
         justifyContent: 'center',
@@ -40,6 +38,18 @@ export default StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    ImageSearchIcon:{
+        height: 37,
+        width: 37
+    },
+    ContainerHeader:{
+        flexDirection: 'row',
+        width: '100%',
+        justifyContent: 'space-between'
+    },
+    ScrollViewStyle:{
+        flex: 1
     }
 
 });
